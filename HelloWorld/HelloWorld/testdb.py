@@ -5,6 +5,8 @@ import sys
 
 from TestModel.models import Test
 
+from HelloWorld.HelloWorld.tools_lzl import make_p_list
+
 sys.path.append("C:\\Users\\bbzn1234\\PycharmProjects\\django\\HelloWorld")
 # from TestModel.models import Test
 
@@ -34,7 +36,7 @@ def testdb(request):
     Test.objects.filter(name="runoob").order_by("id")
 
     # 输出所有数据
-    for var in list_1:
-        response1 += "<p>" + var.name + "</p>"
+
     # response = response1
+    response1 = make_p_list(list_1)
     return HttpResponse("<p>" + response1 + "</p>")

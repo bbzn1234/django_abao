@@ -5,7 +5,7 @@ import sys
 
 from TestModel.models import Test
 
-from HelloWorld.HelloWorld.tools_lzl import make_p_list
+from HelloWorld.tools_lzl import make_p_list
 
 sys.path.append("C:\\Users\\bbzn1234\\PycharmProjects\\django\\HelloWorld")
 # from TestModel.models import Test
